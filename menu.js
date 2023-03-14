@@ -30,7 +30,14 @@
     'kids'
 */
 
-//CODE HERE
+const pizza = {
+    name: 'The Rocket',
+    price: 15,
+    category: 'entree',
+    popularity: 2,
+    rating: 4.5,
+    tags: ['calabrese','arugula','shaved parmesan']
+}
 
 
 
@@ -42,7 +49,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
+console.log(pizza.popularity)
 
 
 /*
@@ -52,7 +59,7 @@
     get the value.
 */
 
-//CODE HERE
+console.log(pizza.tags[1])
 
 
 /*
@@ -62,7 +69,8 @@
     Print the value of your new price variable.
 */
 
-//CODE HERE
+const {price} = pizza;
+console.log(price)
 
 
 /*
@@ -71,8 +79,8 @@
 
     Print the value of your category variable. 
 */
-
-//CODE HERE
+const {category} = pizza; 
+console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -87,7 +95,42 @@
     data in some functions that you'll write.
 */
 
-//CODE HERE
+const foodArr = [
+   { name: 'The Rocket',
+    price: 15,
+    category: 'entree',
+    popularity: 2,
+    rating: 4.5,
+    tags: ['calabrese','arugula','shaved parmesan']},
+    {
+    name: 'The Hawaiian',
+    price: 16,
+    category: 'entree',
+    popularity: 3,
+    rating: 4.4,
+    tags: ['ham','bacon','pineapple rings']},
+    {
+        name: 'The 500',
+        price: 18,
+        category: 'entree',
+        popularity: 1,
+        rating: 4.7,
+        tags: ['pepperoni','jalapeno','pineapple rings']},
+    {
+    name: 'Classic Cheese',
+    price: 14,
+    category: 'entree',
+    popularity: 4,
+    rating: 4.3,
+    tags: ['parmesan','mozarella','ricotta']},
+    {
+        name: 'The Cadillac',
+        price: 20,
+        category: 'entree',
+        popularity: 5,
+        rating: 4.2,
+        tags: ['gorgonzola','fig preserves','prosciutto','parmesan','balsamic glaze']},
+]
 
 
 
@@ -105,10 +148,9 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter((tag) => tag[0``] === 'parmesan')
 
-
-
+console.log(filteredFood)
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
