@@ -147,10 +147,13 @@ const foodArr = [
 */
 
 //CODE HERE
-
-const filteredFood = foodArr.filter((tag) => tag[0``] === 'parmesan')
-
+// const filter = 'parmesan'
+const filteredFood = foodArr.filter((checkTags) => {
+    return checkTags.tags.indexOf("parmesan")>= 0
+})
 console.log(filteredFood)
+
+
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
@@ -190,7 +193,11 @@ console.log(filteredFood)
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+const filterByProperty = foodArr.filter(('property',number,type) => {
+    let filtArr = []
+    if()
+})
+console.log(filteredFood)
 
 
 /*
