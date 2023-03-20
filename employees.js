@@ -95,7 +95,7 @@ console.log(empTwo)
 */
 
 class Manager extends Employee {
-    constructor(name, shifts, employees = []){
+    constructor(name, shifts, employees){
     super(name, shifts)
     
     this.employees = employees

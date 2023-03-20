@@ -193,11 +193,11 @@ console.log(filteredFood)
     Return the filtered array from the entire function
 */
 
-const filterByProperty = foodArr.filter(('property',number,type) => {
-    let filtArr = []
-    if()
-})
-console.log(filteredFood)
+// const filterByProperty = foodArr.filter(('property',number,type) => {
+//     let filtArr = []
+//     if()
+// })
+// console.log(filteredFood)
 
 
 /*

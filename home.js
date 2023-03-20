@@ -21,7 +21,9 @@
     'Welcome back, Andrew'
 */
 
-//CODE HERE
+const greetUser = (username) => console.log(`Welcome back, ${username}`)
+
+greetUser('Andrew')
 
 
 
@@ -81,7 +83,7 @@ const canWeDeliver = (zipcode) =>{
 
 const canWeDeliverTwo = (zipcode) => {
     if(deliveryAreaZipCodes.includes(zipcode)){
-        return "You're in our delivery zone!"
+        console.log("You're in our delivery zone!")
 
     } else {
 
@@ -125,7 +127,11 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-console.log((deals[0].title).replace('15','10'))
+
+
+deals[0].title = deals[0].title.replace('15','10')
+
+console.log(deals)
 
 
 
@@ -142,4 +148,5 @@ console.log((deals[0].title).replace('15','10'))
     to be displaying wrong on the live site.
 */
 
-console.log((deals[1].desc).replace('March','April'))
+deals[1].desc = deals[1].desc.replace('   This deal lasts until the end of March! ','This deal lasts until the end of April!')
+console.log(deals)
